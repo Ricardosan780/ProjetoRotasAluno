@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Perfil do Aluno";
+}
+
+<h2>Perfil Acadêmico</h2>
+<br /><br />
+
+<!-- Usando uma tabela limpa para travar a estrutura verticalmente -->
+<table border="0" style="width: 100%; max-width: 500px; text-align: left; border-collapse: collapse;">
+    <tr>
+        <td style="padding: 10px 0;">
+            <strong>Nome do Aluno:</strong>
+            <br />
+            @ViewBag.Nome
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 10px 0;">
+            <strong>Curso Atual:</strong>
+            <br />
+            @ViewBag.Curso
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 10px 0;">
+            <strong>Período:</strong>
+            <br />
+            @ViewBag.Semestre
+        </td>
+    </tr>
+</table>
+
+<br /><br />
+
+<!-- Botão isolado em seu próprio bloco de parágrafo -->
+<p>
+    <a href="/Aluno/Detalhes/1" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
+        Ver Detalhes do Aluno #1
+    </a>
+</p>
